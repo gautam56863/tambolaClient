@@ -1,9 +1,11 @@
-import finished from './img/finished2.jpg'
+import board from './img/host-board.png'
 function Finished(){
     return (
-        <div className = "finish">
-            <img src = {finished} Alt = "Finished"/>
-            <h1>GAME FINISHED, Thank You for playing !</h1>
+        <div className = "player-bg-board">
+            <img src = {board} alt = "Board"/>
+            <div className='stars'></div>
+            <div className='trophy'></div>
+            <div className='thank-text'>Game Over</div>
         </div>
     )
 }

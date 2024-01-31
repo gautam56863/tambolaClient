@@ -9,7 +9,7 @@ function Popup(props) {
       <div className='popup_content'>
         {props.children}
       </div>
-      <div className='closebutton' onClick = {() => props.setTrigger(false)}>X</div>
+      <div className='closebutton' onClick = {() => props.setTrigger(false)}></div>
     </div>
   ) : "";
 }

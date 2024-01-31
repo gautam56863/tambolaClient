@@ -1,10 +1,10 @@
-const Controls = ({ onHousefullClick, onFirstRowClick, onSecondRowClick, onThirdRowClick }) => {
+const Controls = ({ onHousefullClick, onFirstRowClick, onSecondRowClick, onThirdRowClick, house, rowOne, rowTwo, rowThree }) => {
     return (
       <div className="controls">
-        <button onClick={onHousefullClick} className="button housefull">Housefull</button>
-        <button onClick={onFirstRowClick} className="button row1">Row-1</button>
-        <button onClick={onSecondRowClick} className="button row2">Row-2</button>
-        <button onClick={onThirdRowClick} className="button row3">Row-3</button>
+        <button onClick={onHousefullClick} className = {house ? 'housefull' : 'house_black'} disabled = {!house}>Housefull</button>
+        <button onClick={onFirstRowClick} className = {rowOne ? 'row1' : 'row_black'} disabled = {!rowOne}>Row-1</button>
+        <button onClick={onSecondRowClick} className = {rowTwo ? 'row2' : 'row_black'} disabled = {!rowTwo}>Row-2</button>
+        <button onClick={onThirdRowClick} className = {rowThree ? 'row3' : 'row_black'} disabled = {!rowThree}>Row-3</button>
       </div>
     );
   };
